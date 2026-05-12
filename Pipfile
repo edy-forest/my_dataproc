@@ -26,6 +26,8 @@ sphinx = "*"
 sphinxcontrib-mermaid = "*"
 build = "*"
 twine = "*"
+sphinx-autoapi = "*"
+pydata-sphinx-theme = "*"
 
 [requires]
 python_version = "3.12"

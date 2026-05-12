@@ -9,7 +9,7 @@ def str_to_datetime(time_str: str) -> datetime:
     Parameters
     ----------
     time_str: str
-        ISO8061 형태의 문자열 시간 데이터
+        ISO8601 형태의 문자열 시간 데이터
 
     Returns
     -------
@@ -29,15 +29,16 @@ def str_to_datetime(time_str: str) -> datetime:
 
 def str_to_unixtime(time_str: str) -> np.int64:
     """문자열 시간 데이터를 마이크로초로 변환하는 함수
+
     Parameters
     ----------
     time_str: str
-        ISO8061 형태의 문자열 시간 데이터
+        ISO8601 형태의 문자열 시간 데이터
 
     Returns
     -------
     np.int64
-        마이크로초 데이터
+        마이크로초로 변경된 데이터
 
     Examples
     --------
