@@ -5,22 +5,23 @@
   - microsecond (np.int64) 변환
 
 ## 프로젝트 디렉토리 구조
-* docs/
-  - source/
+```
+docs/
+  source/
     conf.py
     getting_started.rst
     index.rst
     make.bat
     Makefile
-* src/
-  - my_dataproc/
+src/
+  my_dataproc/
     transform.py
-* tests/
+tests/
   test_transform.py
 Pipfile
 Pipfile.lock
 pyproject.toml
-
+```
 ## 라이브러리 설치 방법
 
 `pip install my_dataproc`
@@ -38,9 +39,9 @@ pyproject.toml
 2. str_to_unixtime
   * ISO8601 형식의 문자열을 microsecond(np.int64)로 변환
   * 사용 예시
-  ```python
-  from my_dataproc import transform
+    ```python
+    from my_dataproc import transform
 
-  transform.str_to_unixtime("2024-05-01T10:31:00")
-  # 결과: 1714527060000000
-  ```
+    transform.str_to_unixtime("2024-05-01T10:31:00")
+    # 결과: 1714527060000000
+    ```
