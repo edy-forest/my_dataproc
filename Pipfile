@@ -12,6 +12,9 @@ pipenv = "==2026.6.1"
 platformdirs = "==4.9.6"
 python-discovery = "==1.3.0"
 virtualenv = "==21.3.1"
+numpy = "*"
+pandas = "*"
+my-dataproc = {path = ".", editable = true}
 
 [dev-packages]
 ruff = "*"
