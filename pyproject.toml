@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my_dataproc"
+dynamic = ["version"]
+requires-python = ">=3.12"
+description = "data processing exercise library"
+readme = "README.md"
+authors = [
+    { name = "Edwin Kim", email = "edy@forestsoft.co.kr" },
+]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+keywords = ["data engineering", "data processing"]
+dependencies = [
+    "pandas[performance,plot,parquet,aws,compression]",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "mypy",
+    "pytest",
+    "pytest-cov",
+    "pre-commit",
+    "sphinx",
+    "sphinx-autoapi",
+    "pydata-sphinx-theme",
+    "sphinxcontrib-mermaid",
+    "build",
+    "twine",
+]
+
+[project.urls]
+repository = "https://github.com/edy-forest/my_dataproc.git"
+
+[tool.ruff]
+fix = true
+line-length = 88
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["I"]
+
+[tool.mypy]
+warn_unused_configs = true
+exclude = ["tests/"]
+
+[tool.pytest]
+addopts = ["--import-mode=importlib"]
