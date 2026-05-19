@@ -37,6 +37,7 @@ dev = [
     "sphinxcontrib-mermaid",
     "build",
     "twine",
+    "setuptools_scm",
 ]
 
 [project.urls]

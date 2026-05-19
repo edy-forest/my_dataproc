@@ -49,3 +49,11 @@ pyproject.toml
     str_to_unixtime("2024-05-01T10:31:00")
     # 결과: 1714527060000000
     ```
+
+
+## 버전 관리 (Semantic Versioning)
+
+버전은 `MAJOR.MINOR.PATCH` 형식으로 관리하며 아래 상황일 때 버전 업
+* MAJOR는 기존 API와 호환되지 않는 변경이 생길 때
+* MINOR는 하위 호환을 유지하면서 새로운 기능을 추가할 때
+* PATCH는 하위 호환을 유지하면서 버그를 수정할 때

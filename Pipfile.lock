@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "49b4ce2b269d35ca9e488f2ae1d7d5ad0a8bff793bbacdb71685ba83ca193427"
+            "sha256": "06f0b18f40a207023e6537ecdc760165c7be5c36ecde594df3f2477e72baf001"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -2462,11 +2462,11 @@
         },
         "idna": {
             "hashes": [
-                "sha256:466d810d7a2cc1022bea9b037c39728d51ae7dad40d480fc9b7d7ecf98ba8ee3",
-                "sha256:e677eaf072e290f7b725f9acf0b3a2bd55f9fd6f7c70abe5f0e34823d0accf69"
+                "sha256:048adeaf8c2d788c40fee287673ccaa74c24ffd8dcf09ffa555a2fbb59f10ac8",
+                "sha256:ca962446ea538f7092a95e057da437618e886f4d349216d2b1e294abfdb65fdc"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==3.14"
+            "version": "==3.15"
         },
         "imagesize": {
             "hashes": [
@@ -3110,6 +3110,23 @@
             "markers": "python_version >= '3.10'",
             "version": "==3.5.0"
         },
+        "setuptools": {
+            "hashes": [
+                "sha256:7d872682c5d01cfde07da7bccc7b65469d3dca203318515ada1de5eda35efbf9",
+                "sha256:a59e362652f08dcd477c78bb6e7bd9d80a7995bc73ce773050228a348ce2e5bb"
+            ],
+            "markers": "python_version >= '3.9'",
+            "version": "==82.0.1"
+        },
+        "setuptools-scm": {
+            "hashes": [
+                "sha256:bbba8fe754516cdefd017f4456721775e6ef9662bd7887fb52ae26813d4838c3",
+                "sha256:f611037d8aae618221503b8fa89319f073438252ae3420e01c9ceec249131a0a"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.10'",
+            "version": "==10.0.5"
+        },
         "snowballstemmer": {
             "hashes": [
                 "sha256:6cd7b3897da8d6c9ffb968a6781fa6532dce9c3618a4b127d920dab764a19064",
@@ -3225,6 +3242,14 @@
             ],
             "markers": "python_version >= '3.10'",
             "version": "==2.7.0"
+        },
+        "vcs-versioning": {
+            "hashes": [
+                "sha256:b541e2ba79fc6aaa3850f8a7f88af43d97c1c80649c01142ee4146eddbc599e4",
+                "sha256:fabd75a3cab7dd8ac02fe24a3a9ba936bf258667b5a62ed468c9a1da0f5775bc"
+            ],
+            "markers": "python_version >= '3.10'",
+            "version": "==1.1.1"
         },
         "virtualenv": {
             "hashes": [
