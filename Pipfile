@@ -24,11 +24,11 @@ pytest-cov = "*"
 pre-commit = "*"
 sphinx = "*"
 sphinxcontrib-mermaid = "*"
-build = "*"
 twine = "*"
 sphinx-autoapi = "*"
 pydata-sphinx-theme = "*"
 setuptools-scm = "*"
+build = "*"
 
 [requires]
 python_version = "3.12"
