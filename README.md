@@ -24,15 +24,20 @@ pyproject.toml
 ```
 ## 라이브러리 설치 방법
 
+1. pip install 활용
 `pip install my_dataproc`
+
+2. git 에서 clone 후 pipenv 로 활용
+* `git clone https://github.com/edy-forest/my_dataproc.git` 으로 코드 클론
+* `pipenv install -e my_dataproc`
 
 ## 라이브러리 사용 방법
 1. str_to_datetime
   * ISO8601 형식의 문자열을 datetime으로 변환
   * 사용 예시
     ```python
-    from my_dataproc import transform
-    transform.str_to_datetime("2024-05-01T10:31:00")
+    from my_dataproc import str_to_datetime
+    str_to_datetime("2024-05-01T10:31:00")
     # 결과: datetime(2024, 5, 1, 10, 31)
     ```
 
@@ -40,8 +45,7 @@ pyproject.toml
   * ISO8601 형식의 문자열을 microsecond(np.int64)로 변환
   * 사용 예시
     ```python
-    from my_dataproc import transform
-
-    transform.str_to_unixtime("2024-05-01T10:31:00")
+    from my_dataproc import str_to_unixtime
+    str_to_unixtime("2024-05-01T10:31:00")
     # 결과: 1714527060000000
     ```

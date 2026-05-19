@@ -1,5 +1,8 @@
 [build-system]
-requires = ["setuptools"]
+requires = [
+    "setuptools",
+    "setuptools-scm>=8",
+]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -14,11 +17,11 @@ authors = [
 classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.12",
 ]
 keywords = ["data engineering", "data processing"]
 dependencies = [
-    "pandas[performance,plot,parquet,aws,compression]",
+    "pandas[performance,plot,parquet,aws,compression]>=2.0,<3.0",
+    "numpy>=2.0",
 ]
 
 [project.optional-dependencies]
@@ -53,3 +56,5 @@ exclude = ["tests/"]
 
 [tool.pytest]
 addopts = ["--import-mode=importlib"]
+
+[tool.setuptools_scm]
